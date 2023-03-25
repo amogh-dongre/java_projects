@@ -1,0 +1,228 @@
+#+title: Notes
+#+begin_src java
+
+/*
+Develop Car class with the following properties.
+
+- A car has a certain fuel efficiency measured in km/liter and a certain amount of fuel in the fuel tank. The efficiency is specified in the constructor, and the initial fuel level is 0.
+- Supply a method drive that simulates driving the car for a certain distance, reducing the amount of fuel in the fuel tank.
+- Also supply methods getGasInTank(), returning the current amount of gasoline in the fuel tank, and addGas(), to add gasoline to the fuel tank.
+
+Note: You may assume that the drive method is never called with a distance that consumes more than the available gas.
+
+Supply a CarTester class that tests all methods.
+,*/
+class Car
+{
+	double eff;
+	int fuel;
+	Car(double eff)
+	{
+		this.eff = eff;//20km/liter
+		this.fuel = 0;
+	}
+	void drive(int dist)//dist in km.
+	{
+		int gasReq = (int) (dist / eff);
+		fuel = fuel - gasReq;
+	}
+	void addGas(int liter)
+	{
+		fuel = fuel + liter;
+	}
+	int getGasInTank()
+	{
+		return fuel;
+	}
+}
+class CarTester
+{
+	public static void main(String args[])
+	{
+		Car c1 = new Car(20);
+		c1.addGas(30);
+		c1.drive(80);
+		System.out.println("The amount of fuel in the tank:" + c1.getGasInTank());
+	}
+}
+#+end_src
+#+begin_src java
+/*
+Develop a Letter class for authoring a simple letter.
+
+- Constructor initializes names of Sender and Recipient.
+- addLine() method adds text to the body of the letter
+- getText() returns the entire text of the letter.
+
+The Output should be printed as:
+
+Dear recipient name:
+blank line
+first line of the body
+second line of the body
+. . .
+last line of the body
+blank line
+Sincerely,
+blank line
+sender name
+
+Create TestLetter class to test all the methods of Letter class.
+*/
+class Letter
+{
+	String sender;
+	String receiver;
+	String body;
+	Letter(String sender, String receiver)
+	{
+		this.sender = sender;
+		this.receiver = receiver;
+		this.body="";
+	}
+	void addLine(String line)
+	{
+		body = body + line + '\n';
+	}
+	String getText()
+	{
+		String greet = "Dear " + receiver+","+ '\n';
+		String greet1 = "Sincerely," + '\n' + sender;
+		return greet+'\n'+body+'\n'+greet1;
+	}
+}
+class TestLetter
+{
+	public static void main(String args[])
+	{
+		Letter l1 = new Letter("Rama","Krishna");
+		l1.addLine("Hai");
+		l1.addLine("I am fine Here.");
+		l1.addLine("I hope you also fine");
+		System.out.println(l1.getText());
+	}
+}
+#+end_src
+#+begin_src java
+/*Consider a super market and develop following classes:
+
+Product: It has three attributes name, price, and discount. Supply appropriate getter and setter methods.
+ProductBasket: It is used to hold bunch of products before purchase of products.
+ProductPrinter: It prints list of products purchased by customer, includes product name, price after discount and total price to be paid by customer.
+
+Create TestSuperMarket class to use above classes to print a receipt to the customer.*/
+class Product
+{
+	String name;
+	double price;
+	int discount;
+	//Assume that we have written get and set methods.
+	Product(String name, double price, int discount)
+	{
+		this.name =  name;
+		this.price = price;
+		this.discount = discount;
+	}
+}
+class ProductBasket
+{
+	Product p[];
+	ProductBasket(int noofitems)
+	{
+		p = new Product[noofitems];
+	}
+}
+class ProductPrinter
+{
+	ProductBasket pb;
+	ProductPrinter(ProductBasket pb)
+	{
+		this.pb =  pb;
+	}
+	void display()
+	{
+		double cost = 0,total = 0;
+		System.out.println(" Item Name:" + "\t" + "Price after Discount:");
+		for(int i=0;i<pb.p.length;i++)
+		{
+			cost = pb.p[i].price - (pb.p[i].price * pb.p[i].discount / 100);
+			total =  total + cost;
+			System.out.println(pb.p[i].name + "\t" + cost);
+		}
+		System.out.println("Total Price:" + total);
+	}
+}
+class TestSuperMarket
+{
+	public static void main(String ar[])
+	{
+        Product p1 = new Product("Milk",20,5);
+		Product p2 = new Product("Chocolate",50, 2);
+		Product p3 =  new Product("Ice Cream",200,10);
+		ProductBasket pb = new ProductBasket(3);
+		pb.p[0] = p1;
+		pb.p[1] = p2;
+		pb.p[2] = p3;
+		ProductPrinter pp = new ProductPrinter(pb);
+        pp.display();
+}
+}
+#+end_src
+#+begin_src java
+/*
+Develop a LinearEquation class for a 2 * 2 system of linear equations:
+ax + by = e
+cx + dy = f
+
+x = (ed – bf)/(ad – bc)
+y = (af – ec)/(ad – bc)
+
+Supply appropriate get and set methods along with the following:
+
+- isSolvable() – returns whether the equations are solvable(ad-bc is not equal to 0) or not (reports no solution for equations).
+- getX() and getY() – returns solutions for the equations.
+
+Create TestLinearEquation class to test LinearEquation
+*/
+class LinearEquation
+{
+	int a,b,c,d,e,f;
+	//Assume that we have get and set methods.
+	LinearEquation(int a,int b,int c,int d,int e,int f)
+	{
+		this.a = a;
+		this.b = b;
+		this.c = c;
+		this.d = d;
+		this.e = e;
+		this.f = f;
+	}
+	boolean isSolvable()
+	{
+		return (a*d-b*c)!=0?true:false;
+	}
+	double getX()
+	{
+		return (e*d - b*f)/(a*d-b*c);
+	}
+	double getY()
+	{
+		return (a*f - e*c)/(a*d-b*c);
+	}
+}
+class TestLinearEquation
+{
+	public static void main(String ar[])
+	{
+		LinearEquation le =  new LinearEquation(2,3,4,5,6,7);
+		if(le.isSolvable())
+		{
+			System.out.println("x val: "+le.getX()+" y val: "+le.getY());
+		}
+		else
+		{
+			System.out.println("The linear equation with given values are not solvable.");
+		}
+	}
+}
+#+end_src
