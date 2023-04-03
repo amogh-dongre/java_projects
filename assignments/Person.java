@@ -4,6 +4,10 @@ class Person{
     Scanner sc;
     String name;
     int age;
+    Person(String name,int age){
+        this.age=age;
+        this.name=name;
+    }
     String getName(){
         return name;
     }
@@ -26,7 +30,11 @@ class Person{
 }
 class Gender extends Person{
     String gender;
-    Gender(String gender){
+    Gender(String name,int age){
+        super(name, age);
+    }
+    Gender(String name,int age,String gender){
+        this(name, age);
         this.gender=gender;
     }
 }
@@ -34,6 +42,14 @@ class Student extends Person{
     String college;
     double gpa;
     YearInSchool y1;
+    Student(String name,int age){
+        super(name, age);
+    }
+    Student(String name,int age,String college,double gpa){
+        this(name, age);
+        this.college=college;
+        this.gpa=gpa;
+    }
     String getCollege(){
         retrun college;
     }
@@ -55,7 +71,11 @@ class Student extends Person{
 }
 class YearInSchool extends Student{
     int year;
-    YearInSchool(int year){
+    YearInSchool(String name,int age,String college,double gpa){
+        super(name, age, college, gpa);
+    }
+    YearInSchool(String name,int age,String college,double gpa,int year){
+        this(name, age, college, gpa);
         this.year=year;
     }
 }
@@ -63,6 +83,15 @@ class faculty extends Person{
     String rank;
     String dept;
     double salary;
+    faculty(String name,int age){
+        super(name, age);
+    }
+    faculty(String name,int age,String rank,String dept,double salary){
+     this(name, age);
+     this.rank=rank;
+     this.dept=dept;
+     this.salary=salary;
+    }
     String getRank(){
         return rank;
     }
@@ -85,6 +114,15 @@ class faculty extends Person{
 class Staff extends Person{
     double salary;
     int vacay;
+    Staff(String name,int age){
+        super(name, age);
+    }
+    Staff(String name,int age,double salary,int vacay){
+        this(name, age);
+        this.salary=salary;
+        this.vacay=vacay;
+
+    }
     double getSalary(){
         return salary;
     }
@@ -96,5 +134,20 @@ class Staff extends Person{
     }
     void setVacation(int vacay){
         this.vacay=vacay;
+    }
+}
+class GradStudent extends Student{
+    String dept,thesis_topic;
+    GradStudent(String name,int age,String college,double gpa){
+        super(name, age, college, gpa);
+    }
+    GradStudent(String name,int age,String college,double gpa,aString dept,String thesis_topic){
+        this(name, age, college, gpa);
+        this.thesis_topic=thesis_topic;
+        this.dept=dept;
+    }
+    public String toString() {
+    return "Student department: "+dept+" "+"Student thesis topic "+thesis_topic;
+
     }
 }
