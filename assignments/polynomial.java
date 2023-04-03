@@ -1,3 +1,4 @@
+//Question 20
 import java.util.*;
 class polynomial{
     int[] arr;
