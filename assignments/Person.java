@@ -85,5 +85,16 @@ class faculty extends Person{
 class Staff extends Person{
     double salary;
     int vacay;
-
+    double getSalary(){
+        return salary;
+    }
+    void setSalary(double salary){
+        this.salary=salary;
+    }
+    int getVacation(){
+        return vacay;
+    }
+    void setVacation(int vacay){
+        this.vacay=vacay;
+    }
 }
