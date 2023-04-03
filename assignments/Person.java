@@ -164,7 +164,7 @@ class GradStudent extends Student{
 }
 class driver{
     public static void main(String[] args) {
-        Gender g2 = new Gender()
+        Gender g2 = new Gender();
         Person p1 = new Person("Karthik", 20,"male");
         System.out.println(p1.reducedFare());
     }
