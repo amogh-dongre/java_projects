@@ -26,7 +26,12 @@ class Person{
     void setGender(Gender g1){
         this.g1=g1;
     }
-
+    boolean reducedFare(){
+    if(age < 12 && age > 64){
+     return true;
+    else{
+     return false;
+    }
 }
 class Gender extends Person{
     String gender;
@@ -46,7 +51,7 @@ class Student extends Person{
         super(name, age);
     }
     Student(String name,int age,String college,double gpa){
-        this(name, age);
+        super(name, age);
         this.college=college;
         this.gpa=gpa;
     }
@@ -87,7 +92,7 @@ class faculty extends Person{
         super(name, age);
     }
     faculty(String name,int age,String rank,String dept,double salary){
-     this(name, age);
+     super(name, age);
      this.rank=rank;
      this.dept=dept;
      this.salary=salary;
@@ -118,7 +123,7 @@ class Staff extends Person{
         super(name, age);
     }
     Staff(String name,int age,double salary,int vacay){
-        this(name, age);
+        super(name, age);
         this.salary=salary;
         this.vacay=vacay;
 
@@ -142,7 +147,7 @@ class GradStudent extends Student{
         super(name, age, college, gpa);
     }
     GradStudent(String name,int age,String college,double gpa,aString dept,String thesis_topic){
-        this(name, age, college, gpa);
+        super(name, age, college, gpa);
         this.thesis_topic=thesis_topic;
         this.dept=dept;
     }
