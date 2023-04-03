@@ -19,7 +19,10 @@ public class que15 {
         Scanner ib = new Scanner(System.in);
         int a = ib.nextInt();
         que15 ob1= new que15();
+        System.out.println("A Table of Powers");
+        System.out.println("__________________");
         System.out.println("Integer "+"Square "+"Cube \t"+"Quartic "+"Quintic");
+        System.out.println("_______ "+"______ "+"____ \t"+"_______ "+"_______");
         for(int i =1;i<26;i++) {
             System.out.print(i+"\t");
             System.out.print(ob1.square(i) + " \t");
