@@ -232,7 +232,7 @@ class GradStudent extends Student {
         return thesisTopic;
     }
     public String toString() {
-        return ("Person details:"+"\n"+"Name: "+GetName()+"\n"+"Age: "+GetAge()+"\n"+"Gender: "+GetGender()+"\n"+"College: "+GetCollege()+"\n"+"GPA: "+GetGPA()+"\n"+"Year: "+GetYear()+"\n"+"Dept: "+GetDept()+"\n"+"Thesis Topic: "+GetThesisTopic());
+        return ("Person details:"+"\n"+"Name: "+GetName()+"\n"+"Age: "+GetAge()+"\n"+"College: "+GetCollege()+"\n"+"GPA: "+GetGPA()+"\n"+"Year: "+GetYear()+"\n"+"Dept: "+GetDept()+"\n"+"Thesis Topic: "+GetThesisTopic());
     }
 }
 
