@@ -218,7 +218,7 @@ class GradStudent extends Student {
     void SetDept() {
         System.out.print("Enter Your Dept: ");
         sc = new Scanner(System.in);
-        dept = sc.next();
+        dept = sc.nextLine();
     }
     String GetDept() {
         return dept;
@@ -226,7 +226,7 @@ class GradStudent extends Student {
     void SetThesisTopic() {
         System.out.print("Enter Your Thesis Topic: ");
         sc = new Scanner(System.in);
-        thesisTopic = sc.next();
+        thesisTopic = sc.nextLine();
     }
     String GetThesisTopic() {
         return thesisTopic;
@@ -250,6 +250,23 @@ class Assignment7 {
         S.SetAge();
         S.SetGender();
         System.out.println("//With Student Object - Eligibility for fees reduction: "+S.reducedFare(P1));
-        GradStudent g1 = new GradStudent();
+        Staff st = new Staff(S.GetName(),S.GetAge());
+        st.SetName();
+        st.SetAge();
+        st.SetSalary();
+        st.SetSalary();
+        st.SetVacation();
+        Staff st1 =new Staff(S.GetName(), S.GetAge(), st.GetSalary(),st.GetVacation());
+        System.out.println(st1.toString());
+        Student stu = new Student(S.GetName(),S.GetAge());
+        stu.SetCollege();
+        stu.SetGPA();
+        Student stu1 = new Student(S.GetName(), S.GetAge(), stu.GetCollege(), stu.GetGPA());
+        stu1.SetYear();
+        GradStudent g1 = new GradStudent(S.GetName(), S.GetAge(), stu.GetCollege(), stu.GetGPA(),stu1.GetYear());
+        g1.SetDept();
+        g1.SetThesisTopic();
+        GradStudent g2 = new GradStudent(S.GetName(), S.GetAge(),stu.GetCollege(), stu.GetGPA(), stu1.GetYear(), g1.GetDept(), g1.GetThesisTopic());
+        System.out.println(g2.toString());
     }
 }
