@@ -115,7 +115,7 @@ class Student extends Person {
         Y1.SYear();
     }
     int GetYear() {
-        return Y1.year;
+        return Y1.GetYear();
     }
     public String toString() {
         return ("Person details:"+"\n"+"Name: "+GetName()+"\n"+"Age: "+GetAge()+"\n"+"Gender: "+GetGender()+"\n"+"College: "+GetCollege()+"\n"+"GPA: "+GetGPA()+"\n"+"Year: "+GetYear());
@@ -253,7 +253,6 @@ class Assignment7 {
         Staff st = new Staff(S.GetName(),S.GetAge());
         st.SetName();
         st.SetAge();
-        st.SetSalary();
         st.SetSalary();
         st.SetVacation();
         Staff st1 =new Staff(S.GetName(), S.GetAge(), st.GetSalary(),st.GetVacation());
