@@ -1,6 +1,10 @@
 package com.arssoft.number.util;
 public class palindrome{
-    public static boolean ispalindrome(int n){
+    public static int n;
+    public palindrome(int n){
+        this.n=n;
+    }
+    public static boolean ispalindrome(){
         int n_cpy = n;
         int rev=0;
         while(n!=0){
