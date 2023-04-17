@@ -1,7 +1,7 @@
 package com.arssoft.number.util;
 public class armstrong{
     public static boolean isarmstrong(int n){
-        int res;
+        int res=0;
         int n_cpy = n;
         while(n!=0){
             int rem = (int)(n%10);
