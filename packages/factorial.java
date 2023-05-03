@@ -1,10 +1,10 @@
-package com.arssoft.number.util;
+package amogh.util;
 public class factorial
 {
     public static int n;
-    public static int fact;
+    public static int fact = 1;
     public factorial(int n){
-        this.n=n;
+        factorial.n=n;
     }
     public static int factorial(){
         for(int i=1;i<=n;i++){

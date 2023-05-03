@@ -1,8 +1,8 @@
-package com.arssoft.number.util;
+package amogh.util;
 public class armstrong{
     public static int n;
     public armstrong(int n){
-        this.n=n;
+        armstrong.n=n;
     }
     public static boolean isarmstrong(){
         int res=0;
