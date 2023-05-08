@@ -27,24 +27,45 @@ class UsedCar {
     int year;
     double mileage,price;
     UsedCar(String VIN,String make,int year, double mileage,double price){
-        if(VIN.length() !=4)
+        try{
+		if(VIN.length()!=4)
             throw new UsedCarException(1);
         else
             this.VIN = VIN;
-        if (make=="Ford " || make==" Toyota "||make=="Honda " || make==" other ")
-            this.make=make;
+        }
+		catch(UsedCarException uce){
+			System.out.println(uce);
+		}
+		try{
+			if(make == "Ford"){
+				this.make=make;
+			}
         else
             throw new UsedCarException(2);
-        if(year<2005 && year>2019)
+        }
+		catch(UsedCarException uce){
+			System.out.println(uce);
+		}
+		try{
+		if(year<2005 && year>2019)
             throw new UsedCarException(3);
         else
             this.year = year;
-        if(price< 0.0 || mileage<0.0 )
+        }
+				catch(UsedCarException uce){
+			System.out.println(uce);
+		}
+		try{
+		if(price< 0.0 || mileage<0.0 )
             throw new UsedCarException(4);
         else{
             this.price= price;
             this.mileage= mileage;
         }
+	    }
+				catch(UsedCarException uce){
+			System.out.println(uce);
+		}
 
     }
 }
@@ -52,16 +73,16 @@ class TestUsedCar{
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the VIN of the Car: ");
-        String vin = sc.nextLine();
+        String vin = sc.next();
         System.out.println("Enter the make of the Car: ");
-        String make = sc.nextLine();
+        String make = sc.next();
         System.out.println("Enter the model year of the Car: ");
         int year = sc.nextInt();
         System.out.println("Enter the mileage of the Car: ");
         double mileage=sc.nextDouble();
         System.out.println("Enter the price of the Car: ");
         double price = sc.nextDouble();
-        UsedCar uc = new UsedCar(vin, make, year, mileage, price);
-
-    }
+        UsedCar uc = new UsedCar(vin, make , year, mileage, price);
+		System.out.println(make);
+  }
 }
