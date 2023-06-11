@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 import java.util.* ;
 class Person{
     Gender g1;

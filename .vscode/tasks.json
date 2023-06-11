@@ -1,0 +1,21 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "java (buildArtifact)",
+			"targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+			"elements": [
+				"${compileOutput:demo}",
+				"${dependencies:demo}",
+				"${compileOutput:java_projects_928d3b0b}",
+				"${dependencies:java_projects_928d3b0b}"
+			],
+			"problemMatcher": [],
+			"label": "java (buildArtifact): java_projects",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}

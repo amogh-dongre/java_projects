@@ -1,0 +1,301 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "com.example/com.example.App",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
+            "name": "example/ArrayListDemo",
+            "request": "launch",
+            "mainClass": "com.example/ArrayListDemo",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/ArrayListToArray",
+            "request": "launch",
+            "mainClass": "com.example/ArrayListToArray",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/Assignemnt3",
+            "request": "launch",
+            "mainClass": "com.example/Assignemnt3",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/Cartester",
+            "request": "launch",
+            "mainClass": "com.example/Cartester",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/Letter",
+            "request": "launch",
+            "mainClass": "com.example/Letter",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/Main",
+            "request": "launch",
+            "mainClass": "com.example/Main",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/Shopping",
+            "request": "launch",
+            "mainClass": "com.example/Shopping",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/StatesInput",
+            "request": "launch",
+            "mainClass": "com.example/StatesInput",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/TestBloodData",
+            "request": "launch",
+            "mainClass": "com.example/TestBloodData",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/TestDivision",
+            "request": "launch",
+            "mainClass": "com.example/TestDivision",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/TestLinearEquation",
+            "request": "launch",
+            "mainClass": "com.example/TestLinearEquation",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/TestPackageDemo",
+            "request": "launch",
+            "mainClass": "com.example/TestPackageDemo",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/TestSuperMarket",
+            "request": "launch",
+            "mainClass": "com.example/TestSuperMarket",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/TestSync",
+            "request": "launch",
+            "mainClass": "com.example/TestSync",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/TestWorkingCarException",
+            "request": "launch",
+            "mainClass": "com.example/TestWorkingCarException",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/Test_Quadrilateral",
+            "request": "launch",
+            "mainClass": "com.example/Test_Quadrilateral",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/WrapperClassDemo",
+            "request": "launch",
+            "mainClass": "com.example/WrapperClassDemo",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/anagram",
+            "request": "launch",
+            "mainClass": "com.example/anagram",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/canvas",
+            "request": "launch",
+            "mainClass": "com.example/canvas",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/concat",
+            "request": "launch",
+            "mainClass": "com.example/concat",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "App(1)",
+            "request": "launch",
+            "mainClass": "com.example/demo.src.main.java.com.example.App",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "DemoPhoneCalls",
+            "request": "launch",
+            "mainClass": "com.example/exception_handling.DemoPhoneCalls",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "IssueTest",
+            "request": "launch",
+            "mainClass": "com.example/exception_handling.IssueTest",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "PhoneCallArray",
+            "request": "launch",
+            "mainClass": "com.example/exception_handling.PhoneCallArray",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "PreDefinedException",
+            "request": "launch",
+            "mainClass": "com.example/exception_handling.PreDefinedException",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "QuartsToGallons",
+            "request": "launch",
+            "mainClass": "com.example/exception_handling.QuartsToGallons",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "StudentTest",
+            "request": "launch",
+            "mainClass": "com.example/exception_handling.StudentTest",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "Sum",
+            "request": "launch",
+            "mainClass": "com.example/exception_handling.Sum",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "TestCourseException",
+            "request": "launch",
+            "mainClass": "com.example/exception_handling.TestCourseException",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "TestUsedCar",
+            "request": "launch",
+            "mainClass": "com.example/exception_handling.TestUsedCar",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "arrlist",
+            "request": "launch",
+            "mainClass": "com.example/exception_handling.arrlist",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "exceptiondemo",
+            "request": "launch",
+            "mainClass": "com.example/exception_handling.exceptiondemo",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/first",
+            "request": "launch",
+            "mainClass": "com.example/first",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/hello",
+            "request": "launch",
+            "mainClass": "com.example/hello",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/percentages",
+            "request": "launch",
+            "mainClass": "com.example/percentages",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/polynomial",
+            "request": "launch",
+            "mainClass": "com.example/polynomial",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/que15",
+            "request": "launch",
+            "mainClass": "com.example/que15",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/que16",
+            "request": "launch",
+            "mainClass": "com.example/que16",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/ques19",
+            "request": "launch",
+            "mainClass": "com.example/ques19",
+            "projectName": "java_projects_928d3b0b"
+        },
+        {
+            "type": "java",
+            "name": "example/tickets",
+            "request": "launch",
+            "mainClass": "com.example/tickets",
+            "projectName": "java_projects_928d3b0b"
+        }
+    ]
+}
