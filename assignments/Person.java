@@ -702,4 +702,3 @@ class Assignment7 {
         System.out.println(g2.toString());
     }
 }
->>>>>>> e750f5f5405bb92aced325d21b5391e901b025f5
